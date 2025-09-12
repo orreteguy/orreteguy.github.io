@@ -46,7 +46,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Build Tailwind CSS
-        run: npx @tailwindcss/cli -i ./src/css/tailwind.css -o ./assets/css/tailwind.css --minify
+        run: npx @tailwindcss/cli -i ./src/main.css -o ./assets/css/main.css --minify
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
