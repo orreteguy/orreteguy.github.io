@@ -45,6 +45,8 @@ url: "http://romain.orreteguy.fr" # the base hostname & protocol for your site, 
 #
 exclude:
   - .gitignore
+  - .gitattributes
+  - .github/
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/
