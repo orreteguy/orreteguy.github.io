@@ -1,0 +1,35 @@
+---
+layout: default
+---
+{% comment %}
+Single page layout wrapping page content; the page itself can define sections.
+Front matter variables (optional): hero_title, hero_subtitle
+{% endcomment %}
+<div class="hero py-16 pb-12 text-center">
+  <h1 class="m-0 mb-4 text-[clamp(2.2rem,6vw,3.2rem)] leading-tight font-bold tracking-tight">{{ page.hero_title | default: page.title | default: site.title }}</h1>
+  {% if page.hero_subtitle %}
+    <p class="max-w-2xl mx-auto text-lg text-neutral-600">{{ page.hero_subtitle }}</p>
+  {% endif %}
+</div>
+<div class="page-sections">
+  {{ content }}
+</div>
+<script>
+// Basic scroll spy to highlight nav links
+const navLinks = document.querySelectorAll('header nav a[href^="#"], header nav a[href*="/#"]');
+const sectionIds = Array.from(document.querySelectorAll('section[id]')).map(s=>s.id);
+function onScroll(){
+  const scrollPos = window.scrollY + 80;
+  let current;
+  for(const id of sectionIds){
+    const el = document.getElementById(id);
+    if(!el) continue;
+    if(el.offsetTop <= scrollPos) current = id;
+  }
+  navLinks.forEach(a=>{
+    const hash = a.getAttribute('href').split('#')[1];
+    if(hash && hash === current){ a.classList.add('active'); } else { a.classList.remove('active'); }
+  });
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+</script>
