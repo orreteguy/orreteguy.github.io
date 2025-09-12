@@ -32,8 +32,18 @@ url: "http://romain.orreteguy.fr" # the base hostname & protocol for your site, 
 
 # Build settings
 # theme: minima
-# plugins:
+plugins:
 #   - jekyll-feed
+- jekyll-tailwind
+
+
+# Settings for the jekyll-tailwind plugin
+tailwind:
+  config: tailwind.config.js
+  input: css/main.css
+  output: _site/assets/css/main.css
+  # postcss: config/postcss.config.js # default is nil
+  minify: true # defaults to false
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -49,6 +59,7 @@ exclude:
   - .github/
   - .sass-cache/
   - .jekyll-cache/
+  - .ruby-lsp/
   - gemfiles/
   - Gemfile
   - Gemfile.lock
@@ -57,11 +68,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - yarn.lock
-  - package.json
   - "**/.keep"
-  - bin/
-  - src/
-  - Procfile.dev
+  - css/
   - README.md
   - tailwind.config.js

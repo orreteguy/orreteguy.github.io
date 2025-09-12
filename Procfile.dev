@@ -1,2 +1,0 @@
-web: bundle exec jekyll serve -P 3000 -H 0.0.0.0
-css: npx @tailwindcss/cli -i ./src/main.css -o ./assets/css/main.css --watch

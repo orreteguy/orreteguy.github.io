@@ -2,8 +2,6 @@ _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
+.ruby-lsp
 vendor
 node_modules
-
-# Tailwind generated files
-assets/css/main.css
