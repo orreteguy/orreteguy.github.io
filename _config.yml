@@ -20,8 +20,8 @@
 
 title: Romain ORRÉTÉGUY
 email: romain@orreteguy.fr
-phone: +33652555647
-public_phone: 06 52 55 56 47
+phone: "+33652555647"
+public_phone: "06 52 55 56 47"
 description: |-
   Soutien scolaire pour le primaire et en français au collège, mais aussi
   compagnie sénior pour rompre la solitude.
@@ -43,7 +43,7 @@ tailwind:
   input: css/main.css
   output: _site/assets/css/main.css
   # postcss: config/postcss.config.js # default is nil
-  minify: true # defaults to false
+  # minify: true # defaults to false
 
 # Exclude from processing.
 # The following items will not be processed, by default.
