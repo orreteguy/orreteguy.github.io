@@ -1,0 +1,34 @@
+- title: Compagnie et conversation
+  description: Partager un moment agréable ensemble pour discuter des souvenirs ou de l’actualité ou lire tout simplement.
+  icon: fa-solid fa-handshake
+  audience: seniors
+- title: Promenades et sorties véhiculées
+  description: Accompagner pour une promenade, une sortie culturelle, des courses, un rendez-vous médical ou autre.
+  icon: fa-solid fa-walking
+  audience: seniors
+- title: Activités et stimulation cognitive
+  description: S'amuser avec des exercices créatifs et des jeux de société pour entretenir la mémoire et les fonctions cognitives.
+  icon: fa-solid fa-palette
+  audience: seniors
+- title: Aide administrative
+  description: Organiser le courrier, les documents administratifs et planifier les rendez-vous, et aider à l’usage du numérique.
+  icon: fa-solid fa-file-alt
+  audience: seniors
+
+- title: Renforcement en français
+  description: Consolider les bases en orthographe, grammaire, conjugaison et rédaction qui sont des fondamentaux du langage écrit.
+  icon: fa-solid fa-graduation-cap
+  audience: preteens
+- title: Aide aux devoirs en français
+  description: Accompagner dans la réalisation des devoirs, la compréhension des leçons et la préparation du brevet des collèges.
+  icon: fa-solid fa-pen-fancy
+  audience: preteens
+
+- title: Aide aux devoirs
+  description: Accompagner dans la réalisation des devoirs, la compréhension des leçons pour toutes les matières jusqu’au niveau CM2.
+  icon: fa-solid fa-book
+  audience: children
+- title: Apprentissage par le jeu
+  description: Apprendre en s’amusant pout développer les compétences scolaires et la motivation surtout au travers de jeux éducatifs.
+  icon: fa-solid fa-gamepad
+  audience: children

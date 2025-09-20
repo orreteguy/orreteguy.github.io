@@ -13,29 +13,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="bg-amber-300 sticky top-0 z-10 shadow-sm">
-    <nav class="max-w-3xl mx-auto flex flex-row items-center gap-3 whitespace-nowrap">
-      <div class="brand font-bold"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></div>
-      <ul class="flex flex-row gap-3">
-        <a class="px-4 py-3" href="{{ '/#soutien-scolaire' | relative_url }}">Soutien scolaire</a>
-        <a class="px-4 py-3" href="{{ '/#compagnie-seniors' | relative_url }}">Compagnie séniors</a>
-        <a class="px-4 py-3" href="{{ '/#tarifs' | relative_url }}">Tarifs</a>
-        <a class="px-4 py-3" href="{{ '/#contact' | relative_url }}">Contact</a>
-      </ul>
+  <div class="bg-amber-300 sticky top-0 z-10 shadow-sm">
+    <nav class="max-w-4xl mx-auto px-4 flex flex-row items-center justify-between gap-3 whitespace-nowrap">
+      <div class="brand px-4 py-3 font-bold"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></div>
+      <div class="flex-row hidden md:flex">
+        <a class="px-4 py-3" href="{{ '#tarifs' | relative_url }}">Tarifs</a>
+        <a class="px-4 py-3" href="{{ '#quisuisje' | relative_url }}">Qui suis-je ?</a>
+      </div>
     </nav>
-  </header>
+  </div>
   <main class="bg-white">
-    <div class="max-w-3xl mx-auto">
+    <div class="max-w-4xl mx-auto">
     {{ content }}
     </div>
   </main>
   <footer class="bg-amber-300">
-    <div class="max-w-3xl mx-auto py-4">
-      <div class="text-xl flex flex-row justify-center gap-4">
+    <div class="max-w-4xl mx-auto py-4">
+      <div class="text-xl flex flex-row flex-wrap justify-center gap-4">
 		    <div>Téléphone : <a class="font-bold" href="tel:{{site.phone}}">{{site.public_phone}}</a></div>
         <div>Email : <a class="font-bold" href="mailto:romain@orreteguy.fr">romain@orreteguy.fr</a></div>
       </div>
-      <div class="mt-4 text-center">&copy; {{ site.time | date: '%Y' }} {{ site.title }}. Tous droits réservés.</div>
+      <div class="mt-4 text-center">&copy; {{ site.time | date: '%Y' }} Romain ORRÉTÉGUY EI. Tous droits réservés.</div>
     </div>
   </footer>
 </body>

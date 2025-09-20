@@ -1,73 +1,113 @@
 ---
-layout: page
+layout: default
 title: Accueil
-hero_title: Romain ORRÉTÉGUY
-hero_subtitle: Soutien scolaire et compagnie pour séniors.
+hero_title: Aide et compagnie pour les séniors
+hero_subtitle: Services à la personne pour les élèves et les séniors
 description: Présentation du parcours de Romain ORRÉTÉGUY, services de soutien scolaire, compagnie pour séniors, tarifs et contact.
 ---
-<section id="parcours">
-	<p>
-		Ingénieur logiciel et accompagnant pédagogique, j'interviens depuis plusieurs années sur des projets numériques
-		(architecture cloud, développement backend, optimisation de performances) tout en mettant ces compétences à
-		profit pour l'aide aux apprentissages et le lien humain auprès des séniors. Mon approche repose sur : clarté,
-		patience, transmission et fiabilité.
-	</p>
-	<ul>
-		<li>Pratique pédagogique individualisée : méthodologie, structuration de la pensée, consolidation durable.</li>
-		<li>Engagement humain : écoute active, adaptation au rythme de chacun, création d'un climat de confiance.</li>
-	</ul>
-</section>
+<div class="container mx-auto h-8"></div>
 
-<section id="soutien-scolaire">
-	<h2>Soutien scolaire</h2>
-	<p>
-		Séances personnalisées pour collégiens, lycéens ou étudiants en début de parcours supérieur. Objectif : rendre
-		l'élève autonome, restaurer la confiance et structurer une progression durable plutôt que de viser uniquement
-		la « note suivante ».
-	</p>
-	<h3>Domaines principaux</h3>
-	<ul>
-		<li>Mathématiques : raisonnement, résolution structurée, préparation contrôles & examens.</li>
-		<li>Sciences & logique : algorithmique de base, initiation programmation (selon niveau).</li>
-		<li>Organisation & méthode : plan de révision, prise de notes efficace, gestion du temps.</li>
-	</ul>
-	<h3>Démarche</h3>
-	<ol>
-		<li>Bilan initial (difficultés, attentes, style d'apprentissage).</li>
-		<li>Plan de progression ajustable semaine après semaine.</li>
-		<li>Alternance explication guidée / mise en pratique / reformulation.</li>
-		<li>Suivi synthétique (forces, axes de consolidation, conseils concrets).</li>
-	</ol>
+<header class="px-8 py-6 bg-sky-500/20 rounded-xl">
+  <h1 class="text-3xl font-bold mb-2 text-sky-600/60">Aide à domicile pour les jeunes et les moins jeunes</h1>
+  <div class="text-xl font-normal my-0">J’ai à cœur d’être présent pour toutes les générations : auprès des aînés, je propose une aide concrète pour les courses, les rendez-vous, les démarches administratives ou simplement pour partager un moment agréable ; auprès des écoliers et des collégiens, je prends le temps d’accompagner dans les devoirs et d’apporter un soutien en français, avec patience et bienveillance.</div>
+</header>
 
-  <div class="flex flex-row justify-center mt-6">
-    <a href="tel:{{site.phone}}" class="py-4 px-8 text-white text-lg rounded-full bg-sky-500">Prendre rendez-vous au {{site.public_phone}}</a>
+<section class="px-8 py-4">
+  <h2>Pour les séniors</h2>
+  <img src="{{ '/img/seniors.jpg' | relative_url }}" alt="Dessin de deux personnes jouant à un jeu de société" class="w-full h-64 object-contain rounded-xl mb-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4">
+    {% assign services = site.data.services | where:"audience","seniors" %}
+    {% for service in services %}
+      <div class="card shadow-md">
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+      </div>
+    {% endfor %}
   </div>
 </section>
 
-<section id="compagnie-seniors">
-	<h2>Compagnie & accompagnement des séniors</h2>
-	<p>
-		Un temps de présence bienveillant, cultivé et régulier pour rompre l'isolement, stimuler les échanges et
-		accompagner dans de petites démarches du quotidien (lecture courrier, usage basique du numérique, organisation
-		simple). Ce service n'est pas un acte médical ni un service de soins, mais une présence humaine structurante.
-	</p>
-	<h3>Formes possibles</h3>
-	<ul>
-		<li>Conversation & lien social (histoire familiale, mémoire, centres d'intérêt).</li>
-		<li>Lecture partagée (presse, correspondances, ouvrages courts).</li>
-		<li>Initiation douce au numérique : email, recherche simple, photos.</li>
-		<li>Petite aide d'organisation (agenda, rappels, classement de documents).</li>
-	</ul>
-	<p class="text-sm text-neutral-500">Interventions dans le respect de la vie privée et des limites de compétences (orientation vers professionnels appropriés si nécessaire).</p>
+<section class="px-8 py-4">
+  <h2>Pour les collégiens</h2>
 
-  <div class="flex flex-row gap-4 justify-center mt-6">
-    <a href="tel:{{site.phone}}" class="py-4 px-8 text-sky-500 text-lg rounded-full border-sky-500 border-2">En savoir plus</a>
-    <a href="/contact" class="py-4 px-8 text-white text-lg rounded-full bg-sky-500">Me contacter</a>
+  <img src="{{ '/img/preteens.jpg' | relative_url }}" alt="Dessin de deux personnes travaillant sur des révisions" class="w-full h-64 object-contain rounded-xl mb-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4">
+    {% assign services = site.data.services | where:"audience","preteens" %}
+    {% for service in services %}
+      <div class="card shadow-md">
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+      </div>
+    {% endfor %}
   </div>
-
 </section>
 
-<section id="tarifs">
-	<h2>Tarifs</h2>
-	<p>Tarification simple et transparente. Facturation via l'entreprise individuelle.</p>
+<section class="px-8 py-4">
+  <h2>Pour les écoliers</h2>
+
+  <img src="{{ '/img/children.jpg' | relative_url }}" alt="Dessin de deux personnes apprenant en s’amusant" class="w-full h-64 object-contain rounded-xl mb-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4">
+    {% assign services = site.data.services | where:"audience","children" %}
+    {% for service in services %}
+      <div class="card shadow-md">
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+      </div>
+    {% endfor %}
+  </div>
 </section>
+
+<hr id="tarifs" class="m-8 border-2 border-dashed border-amber-300">
+
+<section class="px-8 py-4">
+  <h2>Tarifs</h2>
+  <p>Pour tous les services d’aide à docimile, une seule façon de facturer :</p>
+	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center mt-12 mb-8">
+    <div class="border-2 border-solid border-amber-300 bg-amber-300 p-4 rounded-xl content-center sm:col-span-2 md:col-span-1">
+      <div class="text-xl mb-4">1 heure</div>
+      <div class="text-6xl font-bold">20 €<sup>TTC</sup></div>
+    </div>
+    <div class="border-2 border-solid border-amber-300 p-4 rounded-xl content-center">
+      <div class="text-xl mb-4">30 minutes</div>
+      <div class="text-6xl font-bold">14 €<sup>TTC</sup></div>
+    </div>
+    <div class="border-2 border-solid border-amber-300 p-4 rounded-xl content-center">
+      <div class="text-lg mb-4">Supplément pour les sorties véhiculées</div>
+      <div class="text-4xl font-bold">0,50 €<sup>TTC</sup></div>
+      <div>par km</div>
+    </div>
+  </div>
+  <p>À ce jour, je me déplace <strong>seulement sur les communes de Mont-de-Marsan et Saint-Pierre-du-Mont</strong>.</p>
+
+  <h3 class="mt-6 mb-2">Conditions de règlement</h3>
+  <p>Le règlement s’effectue par chèque ou en espèces.</p>
+  <p>Étant sous forme d’une entreprise individuelle, vous ne pouvez pas utiliser les CESU pour régler vos factures, car il est utilisable pour vos salariés.</p>
+  <h3 class="mt-6 mb-2">Crédit d’impôts</h3>
+  <p>Je vous fournis une attestation fiscale annuelle vous permettant de bénéficier d’une réduction ou d’un crédit d’impôt de 50 % sur les sommes versées au titre des services à la personne dans la limite des plafonds prévues par la loi.</p>
+</section>
+
+<hr id="quisuisje" class="m-8 border-2 border-dashed border-amber-300">
+
+<section class="px-8 py-4">
+  <h2>Qui suis-je ?</h2>
+  <img src="{{ '/img/portrait.jpg' | relative_url }}" alt="Portrait de Romain ORRÉTÉGUY" class="w-48 h-48 object-cover rounded-full mx-auto my-4 md:mx-4 md:me-0 md:float-end relative md:-top-8">
+	<p>
+    Je m’appelle Romain ORRÉTÉGUY et j'ai grandi à Mont-de-Marsan.
+    Après un Master en Droit public et Sciences politiques de l'Université de Bordeaux,
+    j’ai travaillé plusieurs années dans le secteur public avant de ressentir le besoin de me tourner vers quelque chose de plus concret et humain.
+    L’aide à la personne s’est naturellement imposée à moi car j’aime transmettre et être utile aux autres.
+    J’ai donc créé ma micro-entreprise en 2025 me permettant de faire ce pour quoi je me sens utile :
+    soutenir les enfants dans leur scolarité et offrir un peu de présence aux aînés.
+	</p>
+  <h3 class="mt-6 mb-2">Mes valeurs</h3>
+  <ul class="grid grid-cols-1 gap-4 mt-6 sm:grid-cols-2 max-w-xl mx-auto">
+    <li class="card bg-amber-300 text-lg border-none text-center font-bold uppercase">Respect</li>
+    <li class="card bg-amber-300 text-lg border-none text-center font-bold uppercase">Bienveillance</li>
+    <li class="card bg-amber-300 text-lg border-none text-center font-bold uppercase">Transparence</li>
+    <li class="card bg-amber-300 text-lg border-none text-center font-bold uppercase">Fiabilité</li>
+  </ul>
+</section>
+
+
+<div class="flex flex-row gap-4 justify-center py-12">
+  <a href="tel:{{site.phone}}" class="py-4 px-8 text-sky-500 text-lg rounded-full border-sky-500 border-2 hover:bg-sky-500 hover:text-white transition">M’appeler par téléphone</a>
+</div>

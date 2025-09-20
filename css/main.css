@@ -6,6 +6,20 @@
 
 @layer base {
   h2 {
-    @apply text-2xl font-bold mt-8 mb-4;
+    @apply text-2xl font-bold text-sky-600/60 mb-4;
+  }
+  h3 {
+    @apply text-lg font-bold text-sky-600/60;
+  }
+
+  sup {
+    font-size: 40%;
+    vertical-align: super;
+  }
+}
+
+@layer components {
+  .card {
+    @apply border border-stone-200 rounded-lg px-4 py-3;
   }
 }

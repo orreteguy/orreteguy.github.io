@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Romain ORRÉTÉGUY
+title: D’un bout à l’autre
 email: romain@orreteguy.fr
 phone: "+33652555647"
 public_phone: "06 52 55 56 47"
@@ -26,15 +26,16 @@ description: |-
   Soutien scolaire pour le primaire et en français au collège, mais aussi
   compagnie sénior pour rompre la solitude.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://romain.orreteguy.fr" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://romain.orreteguy.fr" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
 # Build settings
 # theme: minima
-plugins:
-#   - jekyll-feed
-- jekyll-tailwind
+# plugins:
+# - jekyll-feed
+# - jekyll-tailwind
+# - jekyll-sitemap
 
 
 # Settings for the jekyll-tailwind plugin
