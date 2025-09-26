@@ -2,8 +2,12 @@
   description: Partager un moment agréable ensemble pour discuter des souvenirs ou de l’actualité ou lire tout simplement.
   icon: fa-solid fa-handshake
   audience: seniors
-- title: Promenades et sorties véhiculées
-  description: Accompagner pour une promenade, une sortie culturelle, des courses, un rendez-vous médical ou autre.
+# - title: Promenades et sorties véhiculées
+#   description: Accompagner pour une promenade, une sortie culturelle, des courses, un rendez-vous médical ou autre.
+#   icon: fa-solid fa-walking
+#   audience: seniors
+- title: Récupération de vos courses pour vous
+  description: Faire les courses alimentaires ou non selon une liste fournie, et les rapporter à domicile.
   icon: fa-solid fa-walking
   audience: seniors
 - title: Activités et stimulation cognitive
