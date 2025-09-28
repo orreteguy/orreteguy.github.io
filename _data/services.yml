@@ -6,8 +6,8 @@
 #   description: Accompagner pour une promenade, une sortie culturelle, des courses, un rendez-vous médical ou autre.
 #   icon: fa-solid fa-walking
 #   audience: seniors
-- title: Récupération de vos courses pour vous
-  description: Faire les courses alimentaires ou autre selon une liste fournie, et les rapporter à domicile.
+- title: Les courses sans bouger de chez vous
+  description: Faire les courses alimentaires ou autre selon une liste fournie, les rapporter à votre domicile et vous aider à les ranger.
   icon: fa-solid fa-walking
   audience: seniors
 - title: Activités et stimulation cognitive
