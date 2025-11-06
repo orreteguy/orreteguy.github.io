@@ -37,6 +37,15 @@ url: "https://romain.orreteguy.fr" # the base hostname & protocol for your site,
 # - jekyll-tailwind
 # - jekyll-sitemap
 
+page_excerpts: true
+
+excerpt_separator: "<!--more-->"
+
+collections:
+  articles:
+    output: true
+    sort_by: date
+    permalink: /articles/:title/
 
 # Settings for the jekyll-tailwind plugin
 tailwind:
@@ -55,6 +64,7 @@ tailwind:
 # their entries' file path in the `include:` list.
 #
 exclude:
+  - bin/
   - .gitignore
   - .gitattributes
   - .github/
@@ -71,5 +81,5 @@ exclude:
   - vendor/ruby/
   - "**/.keep"
   - css/
-  - README.md
+  - "./*.md"
   - tailwind.config.js

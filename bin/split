@@ -1,0 +1,105 @@
+#!/usr/bin/env ruby
+
+require 'pathname'
+require 'yaml'
+require 'active_support/core_ext/object/blank'
+require 'active_support/core_ext/string/inflections' # for parameterize
+require 'active_support/core_ext/hash/keys'       # for stringify_keys
+require 'active_support/core_ext/enumerable'   # for compact_blank
+
+class Splitter
+
+  KEY_ALIASES = {
+    categorie: :category,
+    categories: :category,
+    publie: :published
+  }.freeze
+
+  Article = Struct.new(:title, :slug, :intro, :body, :category, :layout, :published, :date, keyword_init: true) do
+    def path
+      Pathname.new(__dir__).join "../_articles/#{slug}.md"
+    end
+
+    def write!
+      if slug.size > 64
+        raise "Slug too long (#{slug.size} > 64): #{slug}"
+      end
+      path.write markdown
+    end
+
+    def metadata
+      {
+        layout: layout || 'article',
+        title: title,
+        date: date,
+        published: published,
+        category: category
+      }
+    end
+
+    def markdown
+      <<~MARKDOWN
+        #{metadata.compact_blank.stringify_keys.to_yaml.strip}
+        ---
+
+        #{intro}
+
+        <!--more-->
+
+        #{body}
+      MARKDOWN
+    end
+  end
+
+
+  def self.split_articles(file)
+    new(file).split_articles
+  end
+
+  def initialize(file)
+    @file = file
+    @content = File.read(file)
+  end
+
+  def split_articles
+    articles = @content.split(/^ARTICLE\ *$/)[1..].map { it.split(/^FIN\ *$/)[0] }
+    articles.each_with_index do |text, index|
+      parse_article(text).write!
+    end
+  end
+
+  def parse_article(article)
+    # Extract title, slug, intro, body, category
+    parts = article.split(/^TITRE\ *$/)
+    raise "Where is TITRE?\n#{article}" if parts.size != 2
+
+    metadata_text, content = parts
+    metadata = metadata_text
+      .strip
+      .lines
+      .map { |line| line.strip.split(':', 2).map(&:strip) }
+      .to_h
+      .transform_keys { it.downcase.tr('é', 'e').to_sym }
+      .transform_keys{ KEY_ALIASES[it] || it }
+    raise "Missing SLUG in metadata\n#{article}" unless metadata[:slug]
+    metadata[:published] = !%w[oui ok yes 1].exclude?(metadata[:published].to_s.downcase)
+
+    parts = content.split(/^INTRO\ *$/)
+    raise "Where is INTRO?\n#{article}" if parts.size != 2
+
+    title, body = parts
+    title.gsub!(/^#+\s*/, '') # Remove leading #
+    parts = body.split(/^CORPS\ *$/)
+    raise "Where is CORPS?\n#{article}" if parts.size != 2
+
+    intro, corps = parts
+    Article.new(
+      **metadata,
+      title: title.strip,
+      intro: intro.strip,
+      body: corps.strip,
+    )
+  end
+end
+
+Splitter.split_articles ARGV[0] || 'Romain Business.md'

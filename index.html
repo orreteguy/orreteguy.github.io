@@ -9,7 +9,7 @@ description: Présentation du parcours de Romain ORRÉTÉGUY, services de soutie
 
 <header class="px-8 py-6 bg-sky-500/20 rounded-xl">
   <h1 class="text-3xl font-bold mb-2 text-sky-600/60">Aide à domicile pour les jeunes et les moins jeunes</h1>
-  <div class="text-xl font-normal my-0">J’ai à cœur d’être présent pour toutes les générations : auprès des aînés, je propose une aide concrète pour les courses, les rendez-vous, les démarches administratives ou simplement pour partager un moment agréable ; auprès des écoliers et des collégiens, je prends le temps d’accompagner dans les devoirs et d’apporter un soutien en français, avec patience et bienveillance.</div>
+  <div class="text-xl font-light my-0">J’ai à cœur d’être présent pour toutes les générations : auprès des aînés, je propose une aide concrète pour les courses, les rendez-vous, les démarches administratives ou simplement pour partager un moment agréable ; auprès des écoliers et des collégiens, je prends le temps d’accompagner dans les devoirs et d’apporter un soutien en français, avec patience et bienveillance.</div>
 </header>
 
 <section class="px-8 py-4">
@@ -102,10 +102,23 @@ description: Présentation du parcours de Romain ORRÉTÉGUY, services de soutie
     <li class="card bg-amber-300 text-lg border-none text-center font-bold uppercase">Transparence</li>
     <li class="card bg-amber-300 text-lg border-none text-center font-bold uppercase">Fiabilité</li>
   </ul>
+
+  <h3 class="mt-6 mb-2">Mes publications</h3>
+
+  <p>Je partage régulièrement des <a href="/articles" class="text-sky-600/80 underline">articles</a> mêlant constats, recherches et réflexions personnelles en lien avec mon activité de services à la personne.</p>
+  <p>Voici mes dernières publications&nbsp;:</p>
+  {% assign published_articles = site.articles | where_exp: "article", "article.published != false and article.date <= site.time" | sort: 'date' | reverse | slice: 0, 30 %}
+  {% for article in published_articles %}
+    <a href="{{ article.url }}" class="btn block px-4 py-3 bg-sky-200/20 rounded-xl mt-6 border-2 border-transparent hover:shadow-lg hover:border-sky-500 transition">
+      <div class="font-semibold text-sky-600/60">{{ article.title }}</div>
+      <div class="text-sm text-gray-700">{{ article.excerpt }} <span class="text-sky-600/60">Lire la suite</span></div>
+    </a>
+  {% endfor %}
+
 </section>
 
 
 <div class="flex flex-row gap-4 justify-center py-12">
-  <a href="tel:{{site.phone}}" class="py-4 px-8 text-white text-lg rounded-full bg-sky-500 border-sky-500 border-2 hover:bg-sky-500 hover:text-white transition">M’appeler par téléphone</a>
-  <a href="/faq" class="py-4 px-8 text-sky-500 text-lg rounded-full border-sky-500 border-2 hover:bg-sky-500 hover:text-white transition">Foire aux Questions</a>
+  <a href="tel:{{site.phone}}" class="btn py-4 px-8 text-white text-lg rounded-full bg-sky-500 border-sky-500 border-2 hover:bg-sky-500 hover:text-white transition">M’appeler par téléphone</a>
+  <a href="/faq" class="btn py-4 px-8 text-sky-500 text-lg rounded-full border-sky-500 border-2 hover:bg-sky-500 hover:text-white transition">Foire aux Questions</a>
 </div>
