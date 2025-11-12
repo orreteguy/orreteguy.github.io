@@ -21,8 +21,8 @@ class Splitter
     end
 
     def write!
-      if slug.size > 64
-        raise "Slug too long (#{slug.size} > 64): #{slug}"
+      if slug.size > 96
+        raise "Slug too long (#{slug.size} > 96): #{slug}"
       end
       path.write markdown
     end
@@ -31,7 +31,7 @@ class Splitter
       {
         layout: layout || 'article',
         title: title,
-        date: date,
+        date: Date.civil(*date.split('-').map(&:to_i)),
         published: published,
         category: category
       }
@@ -64,8 +64,19 @@ class Splitter
   def split_articles
     articles = @content.split(/^ARTICLE\ *$/)[1..].map { it.split(/^FIN\ *$/)[0] }
     articles.each_with_index do |text, index|
-      parse_article(text).write!
+      article = parse_article(text)
+      $stdout.puts "Writing article #{index + 1}/#{articles.size}: #{article.slug}"
+      article.write!
     end
+  end
+
+  def clean_text(text)
+    text
+      .strip
+      .gsub(/\ +([\?\!\:\;])/, ' \1')
+      .gsub(/(^|\b)([dlsmtjc])[']/, '\1\2’')
+      .gsub(/“\s*/, '« ')
+      .gsub(/\s*”/, ' »')
   end
 
   def parse_article(article)
@@ -89,15 +100,16 @@ class Splitter
 
     title, body = parts
     title.gsub!(/^#+\s*/, '') # Remove leading #
+    title.gsub!(/(^\*\*|\*\*$)/, '') # Remove leading/trailing **
     parts = body.split(/^CORPS\ *$/)
     raise "Where is CORPS?\n#{article}" if parts.size != 2
 
     intro, corps = parts
     Article.new(
       **metadata,
-      title: title.strip,
-      intro: intro.strip,
-      body: corps.strip,
+      title: clean_text(title),
+      intro: clean_text(intro),
+      body: clean_text(corps),
     )
   end
 end
