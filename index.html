@@ -1,64 +1,80 @@
 ---
-layout: default
+layout: raw
 title: Accueil
 hero_title: Aide et compagnie pour les séniors
 hero_subtitle: Services à la personne pour les élèves et les séniors
 description: Présentation du parcours de Romain ORRÉTÉGUY, services de soutien scolaire, compagnie pour séniors, tarifs et contact.
 ---
-<div class="container mx-auto h-8"></div>
+<!-- <div class="container mx-auto h-8"></div> -->
 
-<header class="px-8 py-6 bg-sky-500/20 rounded-xl">
-  <h1 class="text-3xl font-bold mb-2">Aide à domicile pour les jeunes et les moins jeunes</h1>
-  <div class="text-xl font-light my-0">J’ai à cœur d’être présent pour toutes les générations : auprès des aînés, je propose une aide concrète pour les courses, les rendez-vous, les démarches administratives ou simplement pour partager un moment agréable ; auprès des écoliers et des collégiens, je prends le temps d’accompagner dans les devoirs et d’apporter un soutien en français, avec patience et bienveillance.</div>
+<header class="bg-cover bg-center bg-fixed bg-white" style="background-image: url({{ '/img/sky.jpg' | relative_url }})">
+  <div class="px-8 py-[20vh] max-w-4xl mx-auto text-white text-shadow-md">
+    <h1 class="text-3xl font-bold mb-2">Aide à domicile pour les jeunes et les moins jeunes</h1>
+    <div class="text-xl font-light my-0">J’ai à cœur d’être présent pour toutes les générations : auprès des aînés, je propose une aide concrète pour les courses, les rendez-vous, les démarches administratives ou simplement pour partager un moment agréable ; auprès des écoliers et des collégiens, je prends le temps d’accompagner dans les devoirs et d’apporter un soutien en français, avec patience et bienveillance.</div>
+  </div>
 </header>
 
-<section class="px-8 py-4">
-  <h2>Pour les séniors</h2>
-  <img src="{{ '/img/seniors.jpg' | relative_url }}" alt="Dessin de deux personnes jouant à un jeu de société" class="w-full h-64 object-contain rounded-xl mb-4">
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4">
-    {% assign services = site.data.services | where:"audience","seniors" %}
-    {% for service in services %}
-      <div class="card shadow-md">
-        <h3>{{ service.title }}</h3>
-        <p>{{ service.description }}</p>
+<section class="bg-white">
+  <div class="p-8 max-w-4xl mx-auto">
+    <h2>Pour les séniors</h2>
+    <div class="flex flex-row">
+      <img src="{{ '/img/seniors.jpg' | relative_url }}" alt="Dessin de deux personnes jouant à un jeu de société" class="w-full h-64 object-contain rounded-xl my-4 sticky top-16">
+      <div class="flex flex-col gap-4 my-4">
+        {% assign services = site.data.services | where:"audience","seniors" %}
+        {% for service in services %}
+          <div class="card shadow-md">
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.description }}</p>
+          </div>
+        {% endfor %}
       </div>
-    {% endfor %}
+    </div>
   </div>
 </section>
 
-<section class="px-8 py-4">
-  <h2>Pour les collégiens</h2>
+<section class="bg-white">
+  <div class="p-8 max-w-4xl mx-auto">
 
-  <img src="{{ '/img/preteens.jpg' | relative_url }}" alt="Dessin de deux personnes travaillant sur des révisions" class="w-full h-64 object-contain rounded-xl mb-4">
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4">
-    {% assign services = site.data.services | where:"audience","preteens" %}
-    {% for service in services %}
-      <div class="card shadow-md">
-        <h3>{{ service.title }}</h3>
-        <p>{{ service.description }}</p>
+    <h2>Pour les collégiens</h2>
+
+    <div class="flex flex-row">
+      <img src="{{ '/img/preteens.jpg' | relative_url }}" alt="Dessin de deux personnes travaillant sur des révisions" class="w-full h-64 object-contain rounded-xl my-4 sticky top-16">
+      <div class="flex flex-col gap-4 my-4">
+        {% assign services = site.data.services | where:"audience","preteens" %}
+        {% for service in services %}
+          <div class="card shadow-md">
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.description }}</p>
+          </div>
+        {% endfor %}
       </div>
-    {% endfor %}
+    </div>
   </div>
 </section>
 
-<section class="px-8 py-4">
+<section class="bg-white">
+  <div class="p-8 max-w-4xl mx-auto">
+
   <h2>Pour les écoliers</h2>
 
-  <img src="{{ '/img/children.jpg' | relative_url }}" alt="Dessin de deux personnes apprenant en s’amusant" class="w-full h-64 object-contain rounded-xl mb-4">
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4">
-    {% assign services = site.data.services | where:"audience","children" %}
-    {% for service in services %}
-      <div class="card shadow-md">
-        <h3>{{ service.title }}</h3>
-        <p>{{ service.description }}</p>
-      </div>
-    {% endfor %}
+  <div class="flex flex-row">
+    <img src="{{ '/img/children.jpg' | relative_url }}" alt="Dessin de deux personnes apprenant en s’amusant" class="w-full h-64 object-contain rounded-xl my-4 sticky top-16">
+    <div class="flex flex-col gap-4 my-4">
+      {% assign services = site.data.services | where:"audience","children" %}
+      {% for service in services %}
+        <div class="card shadow-md">
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
-<hr id="tarifs" class="m-8 border-2 border-dashed border-amber-300">
+<hr id="tarifs" class="bg-white border-2 border-dashed border-amber-300">
 
-<section class="px-8 py-4">
+<section class="bg-white">
+  <div class="p-8 max-w-4xl mx-auto">
   <h2>Tarifs</h2>
   <p>Pour tous les services d’aide à domicile, une seule façon de facturer :</p>
 	<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 text-center mt-12 mb-8">
@@ -80,11 +96,13 @@ description: Présentation du parcours de Romain ORRÉTÉGUY, services de soutie
   <p>Étant sous forme d’une entreprise individuelle, vous ne pouvez pas utiliser les CESU pour régler vos factures, car il est utilisable pour vos salariés.</p>
   <h3 class="mt-6 mb-2">Crédit d’impôts</h3>
   <p>Je vous fournis une attestation fiscale annuelle vous permettant de bénéficier d’une réduction ou d’un crédit d’impôt de 50 % sur les sommes versées au titre des services à la personne dans la limite des plafonds prévues par la loi.</p>
+  </div>
 </section>
 
-<hr id="quisuisje" class="m-8 border-2 border-dashed border-amber-300">
+<hr id="quisuisje" class="bg-white border-2 border-dashed border-amber-300">
 
-<section class="px-8 py-4">
+<section class="bg-white">
+  <div class="p-8 max-w-4xl mx-auto">
   <h2>Qui suis-je ?</h2>
   <img src="{{ '/img/portrait.jpg' | relative_url }}" alt="Portrait de Romain ORRÉTÉGUY" class="w-48 h-48 object-cover rounded-full mx-auto my-4 md:mx-4 md:me-0 md:float-end relative md:-top-8">
 	<p>
@@ -115,10 +133,11 @@ description: Présentation du parcours de Romain ORRÉTÉGUY, services de soutie
     </a>
   {% endfor %}
 
+  </div>
 </section>
 
 
-<div class="flex flex-row gap-4 justify-center py-12">
+<div class="bg-white flex flex-row gap-4 justify-center py-12">
   <a href="tel:{{site.phone}}" class="btn py-4 px-8 text-white text-lg rounded-full bg-sky-500 border-sky-500 border-2 hover:bg-sky-500 hover:text-white transition">M’appeler par téléphone</a>
   <a href="/faq" class="btn py-4 px-8 text-sky-500 text-lg rounded-full border-sky-500 border-2 hover:bg-sky-500 hover:text-white transition">Foire aux Questions</a>
 </div>
