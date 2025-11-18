@@ -37,6 +37,11 @@ plugins:
 - jekyll-tailwind
 # - jekyll-sitemap
 
+
+# https://www.superprof.fr/titulaire-master-droit-public-master-sciences-politiques-propose-soutien-scolaire-bienveillant-structure.html
+# https://www.superprof.fr/passionne-transmission-savoir-jaccompagne-eleves-primaire-aide-collegiens.html
+
+
 page_excerpts: true
 
 excerpt_separator: "<!--more-->"

@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Le fonctionnement du crédit d’impôt à 50% pour les SAP
-date: 2025-11-19
+date: 2025-11-17
 published: true
 category: entreprise
 ---

@@ -7,7 +7,7 @@ published: true
 category: seniors
 ---
 
-L'avancée en âge s’accompagne parfois d’une réduction progressive des interactions sociales, conduisant à un sentiment d’isolement chez de nombreuses personnes âgées. Cet isolement, souvent insidieux, représente pourtant un enjeu majeur pour leur bien-être physique et psychologique. Comprendre les raisons pour lesquelles il est primordial de rompre cette solitude au quotidien permet de mieux appréhender les actions à mettre en place.
+L'avancée en âge s’accompagne parfois d’une réduction progressive des interactions sociales, conduisant à un sentiment d’isolement chez de nombreuses personnes âgées. Cet isolement, souvent insidieux, représente pourtant un enjeu majeur pour leur bien-être physique et psychologique. Comprendre les raisons pour lesquelles il est primordial de rompre cette solitude au quotidien permet de mieux appréhender les actions à mettre en place. De plus, le jeune d’aujourd’hui est la personne âgée de demain et cet état de fait nous oblige à répondre à la question fondamentale de la façon dont nous devons collectivement garantir le respect et la dignité des personnes âgées.
 
 <!--more-->
 

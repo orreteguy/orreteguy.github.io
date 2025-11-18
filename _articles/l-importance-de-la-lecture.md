@@ -6,7 +6,7 @@ published: true
 category: soutien
 ---
 
-Dans une société où les écrans accaparent une part croissante du temps libre, il est essentiel de rappeler le rôle fondamental de la lecture dans le développement des enfants et des adolescents. Plus qu'une compétence scolaire, l’habitude de lire est un tremplin vers l’épanouissement personnel et la réussite. Adopter une approche bienveillante et transparente permet de transformer la lecture d’une obligation en une véritable source de plaisir et de découverte.
+Dans une société où les écrans accaparent une part croissante du temps libre, il est essentiel de rappeler le rôle fondamental de la lecture dans le développement des enfants et des adolescents. Plus qu'une compétence scolaire, l’habitude de lire apporte de nombreux bienfaits tels que la diminution du stress, l’amélioration des connaissances, l’accroissement du vocabulaire, le développement des capacités d’analyse etc. Adopter une approche bienveillante et transparente permet de transformer la lecture d’une obligation en une véritable source de plaisir et de découverte.
 
 <!--more-->
 
