@@ -2,7 +2,7 @@
 layout: article
 title: Pourquoi mettre en place du soutien scolaire pour mon enfant au primaire ?
 date: 2025-11-24
-category: soutien scolaire primaire
+category: soutien
 ---
 
 L’intérêt pour le soutien scolaire en primaire est croissant, notamment de la part des parents soucieux de la réussite éducative de leurs enfants. Cette période est cruciale car elle est dédiée à l’acquisition des bases de l’apprentissage. L'accompagnement scolaire joue un rôle déterminant en offrant un cadre de travail adapté qui permet aux élèves, en plus de développer des compétences fondamentales et solides, de repérer des difficultés d’apprentissage et de les résoudre le plus tôt possible.
