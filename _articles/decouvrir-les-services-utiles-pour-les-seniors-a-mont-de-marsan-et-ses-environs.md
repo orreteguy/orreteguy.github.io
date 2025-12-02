@@ -1,0 +1,34 @@
+---
+layout: article
+title: Découvrir les services utiles pour les séniors à Mont-de-Marsan et ses environs
+date: 2026-02-09
+category: accompagnement sénior
+---
+
+Afin de simplifier l’accès à l’information et aux dispositifs d’aide, plusieurs structures locales sont dédiées à l’accompagnement des personnes âgées, handicapées et de leurs proches aidants.
+
+<!--more-->
+
+## Points d’information et d’orientation locaux
+
+Le [Centre Local d’Information et de Coordination gérontologique (CLIC)](https://annuaire.dac-40.fr/unites/mairie-mont-de-marsan-services-de-teleassistance), aussi appelé pôle autonomie ou Info Séniors, est un guichet d’accueil départemental qui fournit gratuitement des informations et des conseils sur les droits, les démarches administratives et les aides existantes (maintien à domicile, aides financières, hébergement spécialisé). **À Mont-de-Marsan**, ce centre se trouve dans les locaux de la Mairie située au 2 Place du Général Leclerc. Il coordonne également l’action des professionnels du secteur.
+
+De son côté, le Centre Communal d’Action Sociale (CCAS), ou le Centre Intercommunal d’Action Sociale (CIAS) pour l’intercommunalité, est l’établissement public chargé de l’action sociale à l’échelle de la commune. Il oriente les habitants, instruit les dossiers d’aide sociale, distribue des aides communales et gère parfois des services de maintien à domicile ou des solutions d’hébergement pour séniors (résidence autonomie, MARPA).
+
+Le [Centre Intercommunal d’Action Sociale (CIAS) du Marsan](https://www.montdemarsan.fr/vivre-ici/vieillir/services-aides-et-soins-a-domicile/), rattaché à **Mont de Marsan Agglo,** a pour mission d’accompagner les personnes âgées du territoire afin de favoriser leur maintien à domicile dans les meilleures conditions possibles. Le Pôle Domicile du CIAS propose des prestations adaptées et individualisées pour répondre aux besoins des bénéficiaires et de leurs proches. Pour les patients nécessitant simultanément une aide dans les actes quotidiens et des soins, le Service Polyvalent d’Aide et de Soins à Domicile (SPASAD) regroupe les fonctions des équipes d’aide et de soins, simplifiant ainsi le dialogue et la coordination des interventions.
+
+## Acteurs institutionnels et financeurs
+
+Le [Conseil départemental](https://www.landes.fr/) est l’acteur clé de l’action sanitaire et sociale sur son territoire. Il finance et met en œuvre des politiques publiques pour les personnes âgées et handicapées. En matière de dépendance, il est responsable de l’évaluation de la perte d’autonomie (via la grille AGGIR) et de l’attribution de l’Allocation Personnalisée d’Autonomie (APA) et, dans certains cas, de l’Aide Sociale à l’Hébergement (ASH). Le Département soutient également les personnes handicapées, notamment par l’intermédiaire de la [Maison Départementale des Personnes Handicapées (MDPH)](https://www.landes.fr/la-maison-landaise-des-personnes-handicapees). La MDPH est le guichet unique pour l’accueil, l’information et l’orientation des personnes handicapées, chargée d’évaluer le handicap et d’attribuer des aides comme l’Allocation Adulte Handicapé (AAH) ou la Prestation de Compensation du Handicap (PCH). La [Caisse Nationale de Solidarité pour l’Autonomie (CNSA](https://www.cnsa.fr/)) assure quant à elle le pilotage et la gestion financière de la branche Autonomie de la Sécurité sociale.
+
+## Organismes complémentaires et spécialisés
+
+Les Caisses de retraite, qu'elles soient du régime de base ou complémentaire, versent non seulement les pensions, mais développent également une politique de prévention et d’action sociale à destination de leurs assurés. Ces aides peuvent prendre la forme d’un soutien au maintien à domicile ou d’une Aide au Retour à Domicile après Hospitalisation (ARDH). En parallèle, des organismes comme l’Agence nationale de l’habitat (ANAH) distribuent des aides financières aux ménages modestes pour améliorer leur logement, notamment pour les adapter au vieillissement ou au handicap ([Ma Prime Adapt’](https://solidarites.gouv.fr/maprimeadapt-nouvelle-aide-pour-adapter-son-logement-la-perte-dautonomie)). Enfin, les [**Agences Départementales pour l’Information sur le Logement (ADIL**](https://www.adil40.fr/)**)**, membres du réseau de l’ANIL, offrent des conseils gratuits et personnalisés sur les questions de droit, de fiscalité et d’aides financières relatives à l’habitat.
+
+## Les résidences séniors, avantages et inconvénients
+
+[Les résidences séniors](https://www.seniortransition.fr/dossiers-residences-seniors/choisir/residences-seniors-avantages-inconvenients/), ou résidences services, constituent une solution d’hébergement destinée aux personnes âgées autonomes ou légèrement dépendantes. Elles se positionnent comme une option intermédiaire entre le maintien à domicile et l’entrée en Établissement d’Hébergement pour Personnes Âgées Dépendantes (EHPAD). À **Mont-de-Marsan**, il y a par exemple la résidence services séniors « Villas Ginkos Les amandiers », « Oui Séniors » et « Domitys Les craies blanches ».
+
+Ces structures offrent des appartements privés, confortables et spécialement adaptés aux besoins des seniors (barres de maintien, salles de bains équipées, systèmes d’appel d’urgence), facilitant la mobilité et prévenant les accidents domestiques. Le modèle de la résidence service permet de maintenir l’indépendance et l’autonomie des résidents, qui peuvent personnaliser leur logement. Un large éventail de services (restauration, ménage) et d’activités sociales et culturelles est proposé, luttant contre l’isolement et favorisant les interactions. L'environnement est sécurisé, équipé de dispositifs comme la détection de chutes et la téléassistance, et le personnel est joignable pour les urgences. Les résidences bénéficient souvent d’un emplacement stratégique (centre-ville ou quartiers bien desservis) assurant une proximité avec les commodités, les services médicaux et les transports.
+
+Le principal inconvénient réside dans le fait que ces établissements ne sont pas médicalisés, contrairement aux EHPAD. Si une aide à domicile ou des soins infirmiers sont nécessaires, ils doivent être organisés et financés séparément par le résident, ce qui peut être problématique pour ceux nécessitant des soins fréquents. En conséquence, les résidences séniors sont principalement adaptées aux personnes classées GIR 5 et 6 (autonomie relative) et sont moins appropriées pour les pertes d’autonomie plus avancées (GIR 1 à 4). Le coût de ces résidences peut être significativement plus élevé que celui d’un logement classique, les tarifs variant en fonction de la localisation et des services choisis. Enfin, l’adaptation peut être difficile pour les séniors habitués à un environnement moins urbain, et la disponibilité géographique des résidences services reste limitée dans les zones rurales, nécessitant parfois un éloignement du lieu de vie habituel.

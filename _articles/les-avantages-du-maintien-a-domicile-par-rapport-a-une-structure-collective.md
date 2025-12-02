@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Les avantages du maintien à domicile par rapport à une structure collective
-date: 2025-11-24
+date: 2025-12-22
 category: accompagnement sénior
 ---
 

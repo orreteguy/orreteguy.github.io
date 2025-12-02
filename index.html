@@ -129,7 +129,7 @@ description: Présentation du parcours de Romain ORRÉTÉGUY, services de soutie
   {% for article in published_articles %}
     <a href="{{ article.url }}" class="btn block px-4 py-3 bg-sky-200/20 rounded-xl mt-6 border-2 border-transparent hover:shadow-lg hover:border-sky-500 transition">
       <div class="font-semibold text-sky-600/60">{{ article.title }}</div>
-      <div class="text-sm text-gray-700">{{ article.excerpt }} <span class="text-sky-600/60">Lire la suite</span></div>
+      <div class="text-sm text-gray-700">{{ article.excerpt | strip_html }} <span class="text-sky-600/60">Lire la suite</span></div>
     </a>
   {% endfor %}
 
