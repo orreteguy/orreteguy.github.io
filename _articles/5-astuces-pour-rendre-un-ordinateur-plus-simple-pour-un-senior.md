@@ -19,15 +19,15 @@ Le système d’exploitation (comme Windows ou macOS) est le gestionnaire centra
 
 ## 3\. Utiliser Internet de manière sécurisée
 
-Pour accéder au contenu en ligne, il est nécessaire de configurer une connexion Internet (via câble ou Wi-Fi protégé par mot de passe) et de choisir un navigateur fiable (Chrome, Firefox, Brave). La sécurité en ligne est primordiale : il faut installer et maintenir à jour un logiciel antivirus, faire preuve de prudence face aux tentatives d’hameçonnage (*phishing*) et aux emails suspects, et ne saisir d’informations sensibles que sur des sites sécurisés (HTTPS).
+Pour accéder au contenu en ligne, il est nécessaire de configurer une connexion Internet (via câble ou Wi-Fi protégé par mot de passe) et de choisir un navigateur fiable ([Chrome](https://www.google.com/intl/fr/chrome/), [Firefox](https://www.firefox.com/fr/), [Brave](https://brave.com/fr/)). La sécurité en ligne est primordiale : il faut installer et maintenir à jour un logiciel antivirus, faire preuve de prudence face aux tentatives d’hameçonnage (*phishing*) et aux emails suspects, et ne saisir d’informations sensibles que sur des sites sécurisés (HTTPS).
 
 ## 4\. S’approprier les outils de communication numérique
 
-Les outils numériques permettent de rester connecté. L'envoi et la réception d’emails nécessitent la création d’un compte sur une plateforme reconnue (Gmail, Outlook) et l’apprentissage des méthodes de classement (dossiers, filtres) pour une bonne organisation. Concernant les réseaux sociaux, la prudence est de mise : il est essentiel de créer un profil en protégeant ses informations, de vérifier régulièrement ses paramètres de confidentialité et d’être sélectif quant aux interactions avec des inconnus.
+Les outils numériques permettent de rester connecté. L'envoi et la réception d’emails nécessitent la création d’un compte sur une plateforme reconnue ([Gmail](http://mail.google.com), [Outlook](https://outlook.live.com)) et l’apprentissage des méthodes de classement (dossiers, filtres) pour une bonne organisation. Concernant les réseaux sociaux, la prudence est de mise : il est essentiel de créer un profil en protégeant ses informations, de vérifier régulièrement ses paramètres de confidentialité et d’être sélectif quant aux interactions avec des inconnus.
 
 ## 5\. Créer et organiser efficacement ses documents
 
-L'ordinateur est un outil de productivité qui permet de créer des documents variés grâce aux traitements de texte (Libre Office, Microsoft Word, Google Docs). Pour assurer une gestion efficace, l’organisation des fichiers est clé : il faut nommer clairement les documents, les classer dans des dossiers thématiques, et surtout, les sauvegarder régulièrement sur un support externe (clé USB ou disque dur) ou via un service de stockage en ligne (*cloud*) afin de prévenir toute perte de données.
+L'ordinateur est un outil de productivité qui permet de créer des documents variés grâce aux traitements de texte [(Libre Office](https://fr.libreoffice.org/download/telecharger-libreoffice/), [Microsoft Word](https://www.microsoft.com/fr-fr/microsoft-365/microsoft-office), [Google Docs](https://docs.google.com)). Pour assurer une gestion efficace, l’organisation des fichiers est clé : il faut nommer clairement les documents, les classer dans des dossiers thématiques, et surtout, les sauvegarder régulièrement sur un support externe (clé USB ou disque dur) ou via un service de stockage en ligne (*cloud*) afin de prévenir toute perte de données.
 
 ## Synthèse
 
@@ -39,4 +39,4 @@ L'accès à Internet requiert ensuite de privilégier la sécurité en ligne, no
 
 Enfin, l’efficacité de l’utilisation passe par la capacité à créer et à organiser ses documents à l’aide d’un traitement de texte, complétée par la mise en place de méthodes de classement (dossiers) et de sauvegardes régulières afin d’assurer la pérennité et la sécurité des données.
 
-En s’appropriant méthodiquement ces cinq idées-forces, tout individu peut naviguer dans l’environnement technologique avec assurance et profiter pleinement des opportunités qu'il offre.
+En s’appropriant méthodiquement ces cinq principes, tout individu peut naviguer dans l’environnement technologique avec assurance et profiter pleinement des opportunités qu'il offre.
